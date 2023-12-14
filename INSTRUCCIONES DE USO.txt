@@ -1,0 +1,36 @@
+IMPORTANTE: Este programa, en forma de script, ha sido desarrollado exclusivamente con propósitos educativos y 
+sin intención alguna de causar daños o perjuicios a terceros. El autor no asume responsabilidad alguna por un 
+mal uso que se pueda hacer de este programa.
+
+---
+
+Para ejecutar el programa en Windows, usa una terminal como Window Subsystem for Linux (WSL) o Git Bash. 
+Utiliza el siguiente comando:
+
+  bash spider_rp.sh
+
+O como alternativa, ejecuta estos comandos:
+ 
+  chmod +x spider_rp.sh
+  ./spider_rp.sh
+
+El comando chmod +x solo se necesita ejecutar una vez para otorgar permisos de ejecución al programa.
+
+La primera vez que ejecutes el script, se iniciará una configuración inicial que pedirá tu nombre de usuario para 
+establecer un archivo adicional para descargas futuras. Después de esto, vuelve a ejecutar el programa para que 
+empiece a funcionar.
+
+---
+
+Los documentos de residencia se guardan en directorios con el nombre de los residentes en la plataforma. Esto 
+permite la descarga automatizada de los archivos usando solo los nombres de los residentes.
+
+Para configurar la lista de descargas en el archivo listaDescargas.txt:
+
+Abre el archivo en un editor de texto como el Bloc de notas y sigue estos lineamientos:
+
+1.- Cada nombre debe estar en una línea nueva con este orden: APELLIDO_PATERNO APELLIDO_MATERNO PRIMER_NOMBRE SEGUNDO_NOMBRE.
+2.- Preferiblemente escribir los nombres en MAYÚSCULAS, aunque el script también convierte automáticamente.
+3.- Evita espacios o símbolos al inicio y final de cada línea.
+4.- Evita dejar líneas vacías entre nombres.
+5.- Si una línea comienza con #, se toma como un comentario y no se descargará.
